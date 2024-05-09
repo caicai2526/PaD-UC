@@ -1,0 +1,11 @@
+CUDA_VISIBLE_DEVICES=0 python eval.py \
+--drop_out \
+--k 10 \
+--models_exp_code UC_2_class_average_D1_D2_task_1_tumor_vs_normal_100_toad_s1 \
+--save_exp_code UC_2_class_average_D1_D2_task_1_tumor_vs_normal_100_toad_s1_cv \
+--task task_1_tumor_vs_normal \
+--model_type toad \
+--data_root_dir E:\\IBD\\IBD_UC_Grade_exp\\CLAM\\4_Class \
+--results_dir E:\\Project_Result\\UC_inflammation\\results \
+--csv_path E:\\IBD\\IBD_UC_Grade_exp\\CLAM\\dataset\\Step_3_with_or_without_inflammation_blance.csv \
+--label_dict "{'UC_0': 0, 'UC_1': 1}"

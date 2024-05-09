@@ -1,0 +1,20 @@
+CUDA_VISIBLE_DEVICES=0 python main.py \
+--data_root_dir E:\\IBD\\IBD_UC_Grade_exp\\CLAM\\4_Class \
+--drop_out \
+--lr 2e-4 \
+--k 10 \
+--max_epochs 100 \
+--label_frac 1 \
+--exp_code UC_4_class_task_2_subtyping_100_D1_D2_patch512_ce_toad \
+--weighted_sample \
+--bag_loss ce \
+--task task_2_subtyping \
+--n_class 4 \
+--split_dir UC_4_class_average_D1_D2_task_2_subtyping_100 \
+--model_type toad \
+--subtyping \
+--log_data \
+--inst_loss svm \
+--results_dir E:\\Project_Result\\UC_subtyping\\results\\4_subtypes_class_3 \
+--csv_path E:\\IBD\\IBD_UC_Grade_exp\\CLAM\\dataset\\Step_3.csv \
+--label_dict "{'subtype_0': 0, 'subtype_1': 1, 'subtype_2': 2, 'subtype_3': 3}"
